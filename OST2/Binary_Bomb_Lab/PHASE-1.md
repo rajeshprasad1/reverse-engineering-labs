@@ -89,3 +89,7 @@ Which means the required input is simply the reference string itself:
 ```
 I am just a renegade hockey mom.
 ```
+ 
+## Key Takeaway
+ 
+This phase is a straightforward length-then-content string comparison compiled to assembly; no obfuscation beyond the fact that the reference string and the comparison logic have to be reconstructed from the disassembly rather than read directly off the surface.
