@@ -21,13 +21,13 @@ The solutions and C reconstructions were derived using a combination of static a
 ## Table of Contents
 
 ### Core Bomb Lab Analysis
-* [**Phase 1 — String Comparison**](OST2/Binary_Bomb/Phase-1.md): Analyzes a standard `strcmp` implementation, satisfying the check via length validation and a byte-by-byte comparison loop.
-* [**Phase 2 — Input Sequence**](OST2/Binary_Bomb/Phase-2.md): Deduces a mathematical constraint loop utilizing highly optimized logical left shifts (`shl`) in place of standard multiplication.
-* [**Phase 3 — Reconstructing a Switch-Case Jump Table**](OST2/Binary_Bomb/Phase-3.md): Explores how high-level `switch` statements are translated into bounds-checked indirect jump tables at the assembly level.
-* [**Phase 4 — Reconstructing a Recursive Binary Search**](OST2/Binary_Bomb/Phase-4.md): Unpacks recursive function calls, midpoint division optimizations (`cdq`, `sub`, `sar`), and dynamic return value accumulation.
-* [**Phase 5 — Following an Indirect Array Traversal**](OST2/Binary_Bomb/Phase-5.md): Traces an indirect, pointer-chasing array traversal safely bounded by a bitwise AND mask (`& 0xF`).
-* [**Phase 6 — Reconstructing and Reordering a Linked List**](OST2/Binary_Bomb/Phase-6.md): Details the memory alignment of a statically allocated linked list and the logic required to mathematically sort and rewire its nodes.
-* [**Secret Phase — Reconstructing a Binary Search Tree**](OST2/Binary_Bomb/Secret-Phase.md): Covers uncovering a hidden trigger string and mathematically unwinding a recursive Binary Search Tree traversal to derive a target value.
+* [**Phase 1 — String Comparison**](Binary_Bomb/Phase-1.md): Analyzes a standard `strcmp` implementation, satisfying the check via length validation and a byte-by-byte comparison loop.
+* [**Phase 2 — Input Sequence**](Binary_Bomb/Phase-2.md): Deduces a mathematical constraint loop utilizing highly optimized logical left shifts (`shl`) in place of standard multiplication.
+* [**Phase 3 — Reconstructing a Switch-Case Jump Table**](Binary_Bomb/Phase-3.md): Explores how high-level `switch` statements are translated into bounds-checked indirect jump tables at the assembly level.
+* [**Phase 4 — Reconstructing a Recursive Binary Search**](Binary_Bomb/Phase-4.md): Unpacks recursive function calls, midpoint division optimizations (`cdq`, `sub`, `sar`), and dynamic return value accumulation.
+* [**Phase 5 — Following an Indirect Array Traversal**](Binary_Bomb/Phase-5.md): Traces an indirect, pointer-chasing array traversal safely bounded by a bitwise AND mask (`& 0xF`).
+* [**Phase 6 — Reconstructing and Reordering a Linked List**](Binary_Bomb/Phase-6.md): Details the memory alignment of a statically allocated linked list and the logic required to mathematically sort and rewire its nodes.
+* [**Secret Phase — Reconstructing a Binary Search Tree**](Binary_Bomb/Secret-Phase.md): Covers uncovering a hidden trigger string and mathematically unwinding a recursive Binary Search Tree traversal to derive a target value.
 
 ### Additional Assignments
-* [**RTFM & WTFI Manual Encoding**](OST2/RTFM/RTFM.md): Details the manual construction and encoding of x86 machine-code bytes (such as `MOV`, `SAHF`, `JZ`, and `AND`) using the Intel Software Developer's Manual and assembler data directives.
+* [**RTFM & WTFI Manual Encoding**](RTFM/RTFM.md): Details the manual construction and encoding of x86 machine-code bytes (such as `MOV`, `SAHF`, `JZ`, and `AND`) using the Intel Software Developer's Manual and assembler data directives.
